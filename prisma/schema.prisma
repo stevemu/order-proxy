@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+
+  // not used. being overriden by "config" when initializing the prisma client
+  url      = env("DATABASE_URL")
+}
+
+model ProductData {
+  sku    String @unique
+  name     String
+  price    Float
+}
