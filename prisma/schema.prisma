@@ -14,3 +14,16 @@ model ProductData {
   name     String
   price    Float
 }
+
+model OrderData {
+  id    Int @unique
+  customerId  String
+}
+
+model ItemData {
+  orderId Int
+  sku String
+  quantity Int
+
+  @@unique([orderId, sku])
+}

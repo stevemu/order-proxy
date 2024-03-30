@@ -1,6 +1,5 @@
-export class Product {
-  constructor(
-    public name: string,
-    public price: number,
-  ) {}
+export interface Product {
+  getName(): Promise<string>;
+  getPrice(): Promise<number>;
+  getSKU(): Promise<string>;
 }

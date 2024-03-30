@@ -13,7 +13,7 @@
    pnpm install
    ```
 
-2. **Set up local database:**
+2. **Set up local test database:**
 
    ```bash
    pnpm migrate
