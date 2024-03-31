@@ -1,3 +1,7 @@
+# Intro
+
+the "Order proxy" example in the Agile Software Development, Principles, Patterns, and Practices chapter 26, implemented in typescript.
+
 ## Setup Instructions
 
 ### Prerequisites
